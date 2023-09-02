@@ -1,0 +1,40 @@
+
+
+
+.navbar {
+  background-color: rgb(53, 53, 53);
+  margin: 0px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition-duration: 200ms;
+}
+
+.navbar a:hover {
+  color: rgb(155, 206, 255);
+  text-decoration: none;
+  cursor: pointer;
+
+  transition-duration: 200ms;
+}
+
+.navbar div {
+  margin-inline: 2rem;
+
+}
+
+.navbar div:first-of-type {
+  font-size: 35px;
+}
+
+
+
+
