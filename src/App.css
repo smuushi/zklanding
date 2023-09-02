@@ -35,6 +35,19 @@
   font-size: 35px;
 }
 
+.footer {
+  background-color: rgb(33, 31, 31);
+  color: azure;
+  font-size: 22px;
+  padding: 1.5rem;
+}
+
+.footer div {
+  background-color: rgb(33, 31, 31);
+  color: azure;
+  margin: 1.25rem;
+}
+
 
 
 

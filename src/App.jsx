@@ -1,8 +1,10 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+
 import './App.css'
 import './Card.css'
+
+
 import { NavHeader } from './Header'
 
 function App() {
@@ -19,19 +21,41 @@ function App() {
   
 
       <div id='firstcard' className="card">
-        <h1>zkSpin White Paper</h1>
-        <p>
-          paper preview lorem ipsum paper preview lorem ipsum paper preview lorem ipsum paper preview lorem ipsum paper preview lorem ipsum paper preview lorem ipsum paper preview lorem ipsum paper preview lorem ipsum 
-        </p>
-          <a href="/Whitepaper.pdf">View Paper</a>
+        <div>
+          <h1>zkSpin White Paper Title</h1>
+        </div>
+        
+        <div>
+          <p>
+            paper preview lorem ipsum paper preview lorem ipsum paper preview lorem ipsum paper preview lorem ipsum paper preview lorem ipsum paper preview lorem ipsum paper preview lorem ipsum paper preview lorem ipsum 
+          </p>
+        </div>
+
+        <div>
+          <a href="/Whitepaper.pdf">View PDF Paper</a>
+        </div>
       </div>
+
       <div id='secondcard' className='card'>
-
-
       </div>
       {/* <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p> */}
+
+      <div className='footer'>
+
+        <div>
+          <a href="">Under Construction Footer Link 1</a>
+        </div>
+        <div>
+          <a href="">Under Construction Footer Link 2</a>
+        </div><div>
+          <a href="">Under Construction Footer Link 3</a>
+        </div>
+
+      </div>
+
+
     </>
   )
 }
