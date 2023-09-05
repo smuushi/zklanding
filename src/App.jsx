@@ -1,63 +1,66 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 
 
-import './App.css'
 import './Card.css'
 
 
-import { NavHeader } from './Header'
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import './App.css';
+
+import Navbar from './components/Navbar';
+// import Card from './Card';
+import Footer from './components/Footer';
+// import AboutUs from './components/AboutUs';
+// import Contact from './components/Contact';
+// import FAQ from './components/FAQ';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
+
     <>
 
-      <div className="navbar">
-        <div className="home"><a href="/">zkSpin</a></div>
-        <div><a href="https://www.linkedin.com/in/justinzhang1/">by Justin Zhang</a></div>
-      </div>
-
-  
-
-      <div id='firstcard' className="card">
-        <div>
-          <h1>zkSpin White Paper Title</h1>
-        </div>
+        <Navbar />
         
-        <div>
-          <p>
-            paper preview lorem ipsum paper preview lorem ipsum paper preview lorem ipsum paper preview lorem ipsum paper preview lorem ipsum paper preview lorem ipsum paper preview lorem ipsum paper preview lorem ipsum 
-          </p>
-        </div>
+        <Routes>
+          <Route path="/" exact element={
+            <>
+              <div id='firstcard' className="card">
+                <div>
+                  <h1>zkSpin White Paper Title</h1>
+                </div>
+                
+                <div>
+                  <p>
+                    paper preview lorem ipsum paper preview lorem ipsum paper preview lorem ipsum paper preview lorem ipsum paper preview lorem ipsum paper preview lorem ipsum paper preview lorem ipsum paper preview lorem ipsum 
+                  </p>
+                </div>
 
-        <div>
-          <a href="/Whitepaper.pdf">View PDF Paper</a>
-        </div>
-      </div>
+                <div>
+                  <a target='_blank' rel="noreferrer noopener" href="https://justinzhang.substack.com/exploring-the-landscape-of-blockchain)">View Full Paper</a>
+                </div>
+              </div>
 
-      <div id='secondcard' className='card'>
-      </div>
-      {/* <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
-
-      <div className='footer'>
-
-        <div>
-          <a href="">Under Construction Footer Link 1</a>
-        </div>
-        <div>
-          <a href="">Under Construction Footer Link 2</a>
-        </div><div>
-          <a href="">Under Construction Footer Link 3</a>
-        </div>
-
-      </div>
+              <div id='secondcard' className='card'>
+              </div>
+            </>
 
 
-    </>
-  )
+          } />
+           
+          
+            {/* 
+            <Route path="/about-us" exact component={AboutUs} />
+            <Route path="/contact" exact component={Contact} />
+          <Route path="/faq" exact component={FAQ} /> */}
+          
+            
+        </Routes>
+        
+        <Footer />
+      </>
+
+  );
 }
 
-export default App
+export default App;
